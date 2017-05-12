@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Cust Murderer";
+    src: url(../ressources/fonts/youmurdererbb_reg.ttf) format("truetype");
+}
+
+#storyBox {
+    width:60%;
+    height: 35%;
+    font-size:35px;
+    float:right;
+    margin-top: -10%;
+    margin-right:3%;
+    font-family: "Cust Murderer", Verdana, Tahoma;
+}

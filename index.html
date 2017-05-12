@@ -1,12 +1,31 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="draw.css">
-        <script type="text/javascript" src="animations.js"></script>
-        <script type="text/javascript" src="clicks.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/draw.css">
+        <link rel="stylesheet" type="text/css" href="css/storyBox.css">
+        <script type="text/javascript" src="js/animations.js"></script>
+        <script type="text/javascript" src="js/clicks.js"></script>
+        <script type="text/javascript" src="js/sotryTeller.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     
     
     <body>
+        
+        <div id="moon">
+            
+            <div id=clouds>
+                <div id="cloud1"></div>
+                <div id="cloud2"></div>
+                <div id="cloud3"></div>
+                <div id="cloud4"></div>
+                <div id="cloud5"></div>
+            </div>
+           
+        </div>
+        
+        <div id="storyBox"></div>
+        
+        
         <div id="roof"> 
             
             
@@ -30,6 +49,13 @@
         
         
     </body> 
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            StoryTeller.tellStory();
+        });
+        
+    </script>
     
     
 </html>

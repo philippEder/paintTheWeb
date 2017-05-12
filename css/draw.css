@@ -4,6 +4,51 @@ body {
 }   
 
 
+#moon {
+    width:300px;
+    height: 300px;
+    position:relative;
+    left:7%;
+    top:10%;
+    border-radius: 50%;
+    box-shadow: -35px -35px 0 0 white;
+}
+
+
+
+#clouds div {
+    background:#e8e6e6;
+    border: 0.5px solid black;
+    position:relative;
+    width: 170px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+#cloud1 {
+    bottom: -118px;
+    left: -29%;
+}
+
+#cloud2 {
+    left:30%;
+    top:30px;
+}
+
+#cloud3 {   
+    bottom: 65;
+}
+
+#cloud4 {    
+    left: 13%;
+    bottom: 80px;
+}
+
+#cloud5 {   
+    bottom: 141px;
+    left: -75px;
+}
+
 #roof {
     position: absolute;
     bottom: 260;
@@ -25,6 +70,7 @@ body {
 }
 
 #windowLeft{
+    border: 1px solid black;
     position:relative;
     left:10%;
     top:10%;
@@ -34,6 +80,7 @@ body {
 }
 
 #windowRight{
+    border: 1px solid black;
     position:relative;
     right:10%;
     float:right;
@@ -41,11 +88,11 @@ body {
     width: 20%;
     height: 55px;
     background:#ceea2f;
+    animation: blink 3s infinite;
 }
 
 
-#monsterHead{
-    
+#monsterHead {
     width:35%;
     height:35%;
     position:absolute;
@@ -54,35 +101,41 @@ body {
     border-radius: 50%;
 }
 
-
-#monsterEyeLeft {
+#monsterHead div {
     width: 10%;
     height: 10%;
     position:relative;
+    background:red;
+}
+
+
+#monsterEyeLeft {
     left:10%;
     top:20%;
     border-radius: 30%;
-    background:red;
 }
 
 #monsterEyeRight {
-    width: 10%;
-    height: 10%;
-    position:relative;
     left:80%;
     top:10%;
     border-radius: 30%;
-    background:red;
 }
 
 #ground {
-    
    position:absolute;
    bottom:0px;
    width:100%;
    height:60px;   
    background:#2c6326;
     
+}
+
+
+@keyframes blink {
+    from {background:#ceea2f}
+    3% { background:black; }
+    4% { background:#ceea2f; }
+    to {} 
 }
 
 
